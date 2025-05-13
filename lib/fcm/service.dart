@@ -34,10 +34,11 @@ final serviceCallbackUrls={
     'fail':'{Your Fail Webhook Domain}',
   },
 };
-
-final serviceAccounts = {
-      '{project-ID}':<String,dynamic>{FCM SECRET Json},
-    };
+/// [serviceAccounts] Give a secret key and value for FCM SECRET Json
+/// example: {'uuid':<String,dynamic>{...},}
+final Map<String, Map<String, dynamic>> serviceAccounts = {
+  // '{project-ID}':<String,dynamic>{FCM SECRET Json},
+};
 
   /// Loads service account credentials
   Future<void> initialize(String serviceId) async {
